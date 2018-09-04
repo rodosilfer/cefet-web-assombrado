@@ -60,11 +60,23 @@ header::selection,
 header ::selection,
 footer::selection,
 footer ::selection,
+
+#tags{
+  cursor: pointer;
+}
 #tags::selection,
-#tags ::selection {
+#tags::selection {
   color: white;
   background-color: hotpink;
+  
+  
+
 }
+.tag-1:active, .tag-2:active, .tag-3:active{
+  position: relative; bottom:2px; right:2px;
+
+}
+
 
 a:link {
   color: orange;
@@ -90,6 +102,7 @@ main {
 
 #posts-principais {
   padding-top: 1.5em;
+
 }
 
 #posts-principais h1 {
@@ -102,10 +115,13 @@ main {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative; 
 }
 
 #posts-principais .post .titulo {
   text-shadow: 1px 1px black;
+  position: absolute; top:10px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #posts-principais .post img {
